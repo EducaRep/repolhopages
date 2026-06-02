@@ -2,3 +2,17 @@ User-agent: *
 Allow: /
 
 Sitemap: https://repolhonervoso.art/sitemap.xml
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+
