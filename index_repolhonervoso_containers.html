@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Universo Repolho Nervoso | Arte, Música, Games e Histórias</title>
+<meta name="description" content="Universo Repolho Nervoso — música, arte, games, livros, moda e histórias.">
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Michroma&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; width: 100%; }
+body {
+  background: #000;
+  color: #333;
+  font-family: Quicksand, Arial, sans-serif;
+  line-height: 1.45;
+}
+img, video, iframe { max-width: 100%; height: auto; }
+img { display: block; margin: 0 auto; }
+a { color: inherit; }
+
+/* A página é construída por containers em sequência.
+   Não há coordenadas absolutas do Google Web Designer. */
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 32px 24px;
+  text-align: center;
+  overflow: hidden;
+}
+.container-preto { background: #000; color: #fff; }
+.container-bege { background: #ececc5; color: #333; }
+.container-bege-claro { background: #f6f68a; color: #333; }
+.container-verde { background: #7bff00; color: #080808; }
+.container-verde-claro { background: #d8fdc5; color: #333; }
+.container-amarelo { background: #f3e765; color: #333; }
+.container-amarelo-claro { background: #ece99c; color: #333; }
+.container-cinza { background: #e6e68f; color: #333; }
+.container-branco { background: #fff; color: #333; }
+.container-azul { background: #92caec; color: #111; }
+
+h1, h2, h3, p { margin: 0 auto 20px; }
+h1 { font-family: Indie Flower, cursive; font-size: clamp(38px, 7vw, 72px); line-height: 1.05; }
+h2 { font-size: clamp(28px, 4vw, 45px); line-height: 1.15; }
+h3 { font-size: clamp(22px, 3vw, 32px); line-height: 1.2; }
+p { font-size: clamp(17px, 2vw, 25px); max-width: 900px; }
+.small { font-size: 16px; }
+.michroma { font-family: Michroma, sans-serif; }
+.indie { font-family: Indie Flower, cursive; }
+.bold { font-weight: 700; }
+
+.hero { padding-top: 18px; padding-bottom: 28px; }
+.hero-logo { width: min(550px, 90%); }
+.hero-title { color: #fff; margin-top: 12px; }
+.hero-subtitle { color: #ffc400; font-size: clamp(18px, 3vw, 28px); }
+
+.intro p { max-width: 880px; }
+.intro .exception { font-family: Michroma, sans-serif; }
+
+.full-image { width: min(960px, 100%); }
+.band-image { width: min(677px, 100%); }
+.character-image { width: min(958px, 100%); }
+
+.platforms { display: grid; grid-template-columns: repeat(2, minmax(130px, 1fr)); gap: 18px; max-width: 650px; margin: 25px auto; align-items: center; }
+.platforms img { width: 100%; max-width: 220px; max-height: 150px; object-fit: contain; }
+.platform-note { font-size: 18px; max-width: 850px; }
+
+.video-wrap { width: min(965px, 100%); margin: 24px auto; aspect-ratio: 16 / 9; }
+.video-wrap iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+.game-image { width: min(550px, 100%); }
+.game-card { padding-top: 20px; padding-bottom: 30px; }
+.game-card p { max-width: 850px; }
+
+.gallery-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; max-width: 900px; margin: 20px auto; }
+.gallery-grid img { width: 100%; }
+.gallery-grid .wide { grid-column: 1 / -1; }
+
+.fashion-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; max-width: 900px; margin: 20px auto; }
+.fashion-grid img { width: 100%; }
+
+.book-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; max-width: 900px; margin: 20px auto; }
+.book-grid img { width: 100%; }
+
+.book-title a, .gallery-link a { font-weight: 700; text-decoration: none; }
+.book-title a:hover, .gallery-link a:hover { text-decoration: underline; }
+
+.contact p { margin-bottom: 12px; }
+.support { font-weight: 700; }
+
+.whatsapp {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 1000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 18px;
+  border: 2px solid #25D366;
+  border-radius: 12px;
+  background: #fff;
+  color: #25D366;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  box-shadow: 0 4px 10px rgba(0,0,0,.25);
+}
+.whatsapp:hover { background: #25D366; color: #fff; }
+
+@media (max-width: 650px) {
+  .container { padding: 26px 14px; }
+  .platforms, .gallery-grid, .fashion-grid, .book-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .whatsapp { right: 12px; bottom: 12px; font-size: 15px; padding: 11px 14px; }
+}
+</style>
+</head>
+<body>
+
+<!-- 1. ABERTURA -->
+<section class="container container-preto hero">
+  <img class="hero-logo" src="assets/0Logo Repolho Nervoso Letra Preta sem Fundo_1.webp" alt="Repolho Nervoso">
+  <h1 class="hero-title">Repolho Nervoso</h1>
+  <p class="hero-subtitle">Arte, humor, música e criatividade.</p>
+</section>
+
+<!-- 2. APRESENTAÇÃO -->
+<section class="container container-bege intro">
+  <h2>Repolho Nervoso</h2>
+  <p>
+    <strong>Repolho Nervoso</strong> foi o nome de uma banda de Hard Rock belorizontina criada por Eduardo Soares.
+    Seu principal objetivo era levar ao público um rock alegre, descontraído e bem-humorado — sempre com a missão de espalhar um alto astral por onde passava.
+  </p>
+  <p>
+    A formação inicial contava com as peripécias do excelente baterista André Luiz, os grooves firmes do baixista Lélo (Marco Aurélio), a guitarra sacudida e barulhenta de Eduardo Soares e o toque harmônico dos teclados de Rodrigo Lapertosa.
+  </p>
+  <p>
+    Juntos, esses malucos conseguiram animar o maior bando de cachaceiros do lendário Bar do Fonseca, no Bairro da Serra, em Belo Horizonte.
+  </p>
+  <p>
+    O personagem Repolho Nervoso foi idealizado por Eduardo Soares, desenhado originalmente por Zequinha Portugal e atualizado pela talentosa Titi — ambos artistas de mão cheia.
+  </p>
+</section>
+
+<section class="container container-preto">
+  <p class="exception michroma">é atualmente um universo criativo onde música, arte, games e histórias se encontram.</p>
+</section>
+
+<!-- 3. BANDA -->
+<section class="container container-branco">
+  <img class="band-image" src="assets/Faixa_Repolho_Nervoso-removebg-preview (1).webp" alt="Faixa Repolho Nervoso">
+  <img class="full-image" src="assets/001 - Banda Repolho Nervoso.webp" alt="Banda Repolho Nervoso">
+</section>
+
+<section class="container container-verde">
+  <h3>A Gênese do Repolho Nervoso</h3>
+</section>
+
+<section class="container container-preto">
+  <div class="video-wrap">
+    <iframe src="https://www.youtube.com/embed/t5XoTN7b0JY" title="Topete" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+</section>
+
+<!-- 4. MÚSICA -->
+<section class="container container-preto">
+  <h2>Toque nas imagens</h2>
+  <div class="platforms">
+    <a href="https://www.palcomp3.com/repolhonervoso/discografia/em-construcao/" target="_blank"><img src="assets/Sitesmusicas/Palco MP3.webp" alt="Palco MP3"></a>
+    <a href="http://www.deezer.com/album/60627942" target="_blank"><img src="assets/Sitesmusicas/Deezer.webp" alt="Deezer"></a>
+    <a href="https://open.spotify.com/user/2157ur2v3qk6egcmurp76asva/playlist/5fDwOR9otpJjDmvoQnZ5l4" target="_blank"><img src="assets/Sitesmusicas/Sportify.jpg" alt="Spotify"></a>
+    <a href="https://itunes.apple.com/br/album/em-constru%C3%A7%C3%A3o/1368308008" target="_blank"><img src="assets/Sitesmusicas/i-Tunes.webp" alt="iTunes"></a>
+    <a href="https://music.youtube.com/playlist?list=PLKdjU83hT86rSL4w9pbmT4ndX6tJk6cPz" target="_blank"><img src="assets/Sitesmusicas/Google Play.webp" alt="Google Play"></a>
+  </div>
+</section>
+
+<section class="container container-verde">
+  <p class="platform-note">Todas as músicas e vídeos foram gravadas em casa e é quase impossível obter qualidade na voz sem o auxílio dos equipamentos e profissionalismo dos estúdios.</p>
+</section>
+
+<!-- 5. GAMES -->
+<section class="container container-preto game-card">
+  <img class="game-image" src="assets/Repolho Nervoso Games Puro.webp" alt="Repolho Nervoso Games">
+  <h2>Repolho Nervoso Games</h2>
+</section>
+
+<section class="container container-amarelo-claro game-card">
+  <img class="game-image" src="assets/image.webp" alt="RepolhoBall">
+  <h3>RepolhoBall</h3>
+  <p>
+    Um jogo criativo contra o tempo, onde cada bola precisa ser validada pela “Mãozinha” antes de ser colocada no seu case. O desafio é chegar ao final com o placar zerado — e só os melhores conseguem. Será que você é o próximo “Pelé do RepolhoBall 2”?
+  </p>
+  <p><a href="https://repolhogames.itch.io/" target="_blank">repolhogames.itch.io</a></p>
+</section>
+
+<section class="container container-preto game-card">
+  <img class="game-image" src="assets/Banner_RepolhoBall 2.webp" alt="Banner RepolhoBall 2">
+  <h2>RepolhoBall 2</h2>
+</section>
+
+<section class="container container-verde-claro game-card">
+  <p>
+    Um jogo divertido desenvolvido para estimular nas crianças a coordenação motora, o senso de agrupamento e a organização. No jogo, os pais podem criar diferentes objetivos e incentivar a criança a cumprir as tarefas. É muito legal!
+  </p>
+  <img src="assets/Sério sem fundo.webp" alt="Personagem Repolho" style="width:min(165px,60%);">
+</section>
+
+<!-- 6. FASHION -->
+<section class="container container-amarelo-claro">
+  <h2>Toque nas imagens</h2>
+  <div class="fashion-grid">
+    <img src="assets/Boca Fashion Letra Preta Assinada_2.webp" alt="Boca Fashion">
+    <img src="assets/Camiseta_do_Repolho-removebg-preview.webp" alt="Camiseta do Repolho">
+  </div>
+</section>
+
+<section class="container container-branco">
+  <h2>Repolho Nervoso Fashion</h2>
+</section>
+
+<section class="container container-preto">
+  <div class="video-wrap">
+    <iframe src="https://www.youtube.com/embed/YBjuy3MfWOc" title="Repolho Nervoso Fashion" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+  <div class="video-wrap">
+    <iframe src="https://www.youtube.com/embed/AtmdSS79fNI" title="YouTube video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+</section>
+
+<section class="container container-preto">
+  <h2>Moda — Vista arte. Vista atitude.</h2>
+  <p>
+    As camisetas da Repolho Nervoso Fashion apresentam pinturas originais do artista Eduardo Soares, reproduzidas em estampas de alta definição sobre malhas premium. Cada peça é pensada para durar, para emocionar e para vestir uma ideia.
+  </p>
+  <p>
+    Não vendemos tendência: promovemos identidade. Ao adquirir uma peça, você apoia diretamente o trabalho de artistas independentes.
+  </p>
+  <h3>Highlights</h3>
+  <p>Estampas em óleo sobre tela reproduzidas com impressão premium<br>Edições limitadas<br>Acabamento de qualidade e informações claras de composição</p>
+</section>
+
+<section class="container container-branco">
+  <img class="full-image" src="assets/Modelo do Repolho.jpg" alt="Modelo usando camiseta Repolho Nervoso">
+</section>
+
+<!-- 7. LIVROS -->
+<section class="container container-amarelo">
+  <h2>Repolho Nervoso Books.</h2>
+  <h3>Laboratório Literário</h3>
+</section>
+
+<section class="container container-preto">
+  <div class="book-grid">
+    <div>
+      <img src="assets/cover.jpg" alt="Quando Ser Homem Era Uma Ilusão">
+      <p class="book-title"><a href="https://www.amazon.com.br/dp/B0GKMRFGYP" target="_blank">Quando Ser Homem Era Uma Ilusão</a></p>
+    </div>
+    <div>
+      <img src="assets/cover_1.jpg" alt="Recomeçar Após Perdas e Fracassos">
+      <p class="book-title"><a href="https://www.amazon.com.br/dp/B0GM94Y81R" target="_blank">Recomeçar Após Perdas e Fracassos</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- 8. ARTE / GALERIA -->
+<section class="container container-preto">
+  <img src="assets/Repolho_DaVint_3.jpg" alt="Repolho DaVint" style="width:min(815px,100%);">
+  <img src="assets/Repolho_DaVint.jpg" alt="Repolho DaVint" style="width:min(817px,100%);">
+  <p class="gallery-link"><a href="https://repolhonervoso.art/galeria/index.html" target="_blank">Veja a Galeria de Arte do Repolho Nervoso</a></p>
+</section>
+
+<section class="container container-amarelo-claro">
+  <img src="assets/Mao.gif" alt="Mãozinha" style="width:min(139px,40%);">
+  <p class="bold">Você acaba de ganhar um presente:</p>
+  <h3>o app Repolho Nervoso!</h3>
+  <p>Com ele, você monitora a bateria do seu Android com alertas de carga baixa ou cheia, tudo 100% configurável. De quebra, você ainda cria lembretes rápidos direto na tela de notificações.</p>
+  <p>Baixe agora, é grátis!</p>
+</section>
+
+<!-- 9. ENCERRAMENTO -->
+<section class="container container-amarelo-claro">
+  <img src="assets/RepolhoNalta.gif" alt="Repolho Nervoso" style="width:min(815px,100%);">
+  <p>Se você chegou até o fim desta página, parabéns. Aqui é o lugar onde o bom humor encontra a criatividade e dá aquele tapa na preguiça da vida.</p>
+  <p>Se gostou, espalhe a alegria (e o link). Volte sempre pra ver as novas músicas, artes e invenções.</p>
+  <p><strong>Repolho Nervoso – cultivando risadas, sons e boas ideias desde o século passado.</strong></p>
+</section>
+
+<section class="container container-verde">
+  <p><a href="https://api.whatsapp.com/send?text=Conheça%20o%20Universo%20Repolho%20Nervoso!%20https://repolhonervoso.art" target="_blank">Compartilhe no WhatsApp</a></p>
+</section>
+
+<section class="container container-azul">
+  <p><a href="https://www.facebook.com/sharer/sharer.php?u=https://repolhonervoso.art" target="_blank">Compartilhe no Facebook</a></p>
+</section>
+
+<section class="container container-verde">
+  <p><a href="https://drive.google.com/file/d/1HrKdnXZ7ZsmC_YNMjo5NtIhdiOQRPudn/view?usp=sharing" target="_blank">App do Repolho Nervoso</a></p>
+</section>
+
+<section class="container container-branco contact">
+  <h2>Contato</h2>
+  <p><a href="mailto:contato@repolhonervoso.art">contato@repolhonervoso.art</a></p>
+  <p>(11) 9 7647-8704</p>
+  <p>Redes: @repolhonervoso</p>
+</section>
+
+<section class="container container-preto">
+  <h2>Repolho Nervoso®</h2>
+  <p>Arte, humor e confiança para todas as idades.</p>
+  <p>Instagram<br>Spotify<br>YouTube</p>
+  <p>Criado por Eduardo Soares • Brasil</p>
+</section>
+
+<section class="container container-verde">
+  <h2>Apoie a arte</h2>
+  <p class="support">Ao comprar Repolho Nervoso você apoia diretamente artistas independentes.</p>
+  <p>Quer ser parceiro? Envie um e-mail com seu portfólio.</p>
+</section>
+
+<a class="whatsapp" href="https://wa.me/5511976478704?text=Ol%C3%A1%20Repolho%20Nervoso%20!%20Desejo%20saber%20mais%20sobre%20-%20" target="_blank">💬 Desejo saber mais.</a>
+
+</body>
+</html>
