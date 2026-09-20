@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://repolhonervoso.art/sitemap.xml
+Sitemap: https://repolhonervoso.com/sitemap.xml
 
 User-agent: GPTBot
 Allow: /
